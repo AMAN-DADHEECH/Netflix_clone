@@ -320,7 +320,6 @@ main {
     width: 75vw;
     margin: 2rem auto;
     background-color: black !important;
-    border: 2px solid red;
     /* for debugging */
     z-index: 5;
     position: relative;
@@ -374,7 +373,7 @@ main {
     align-self: flex-end;
 }
 
-/* Herry bhai  */
+/* FAQ section style  */
 
 .faq h2 {
     text-align: center;
@@ -408,6 +407,8 @@ main {
     cursor: pointer;
 }
 
+/* Footer section style */
+
 footer {
     color: white;
     max-width: 60vw;
@@ -419,14 +420,33 @@ footer .questions {
     padding: 34px 0;
 }
 
-
 .footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     color: white;
 }
 
+.footer a {
+    font-size: 14px;
+    color: white;
+}
 
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
+
+/* Separation line for sections style */
+
+.separation {
+    height: 7px;
+    background-color: rgb(46, 44, 44);
+    position: relative;
+    z-index: 20;
+}
+
+/* Media Making Responsive style */
 
 @media screen and (max-width: 1300px) {
 
@@ -483,8 +503,6 @@ footer .questions {
 
 }
 
-
-
 @media screen and (max-width: 1300px) {
 
     .footer {
@@ -492,25 +510,6 @@ footer .questions {
         grid-template-columns: 1fr 1fr;
         gap: 25px;
     }
-}
-
-
-.footer a {
-    font-size: 14px;
-    color: white;
-}
-
-.footer-item {
-    display: flex;
-    flex-direction: column;
-    gap: 23px;
-}
-
-.separation {
-    height: 7px;
-    background-color: rgb(46, 44, 44);
-    position: relative;
-    z-index: 20;
 }
 
 
