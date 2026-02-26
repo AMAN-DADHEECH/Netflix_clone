@@ -545,3 +545,268 @@ footer .questions {
         flex: 1 1 100%;
     }
 }
+
+/* ========================= */
+/* MOBILE FIRST DEFAULT */
+/* ========================= */
+
+/* Fix navbar for mobile */
+.nav-menu-item {
+    position: relative;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Hero text */
+.text-on-img {
+    width: 90%;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Email section mobile */
+.email-input {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+    flex-direction: column;
+    gap: 10px;
+    width: 90%;
+}
+
+.email-input-btn > input {
+    width: 100%;
+}
+
+.email-submit {
+    width: 100%;
+}
+
+/* Trending cards mobile */
+.trending-section {
+    width: 95%;
+    padding: 1rem;
+}
+
+.trending-card {
+    width: 140px;
+}
+
+.ranking-number {
+    font-size: 4rem;
+}
+
+/* Ads mobile */
+.ads {
+    flex-direction: column;
+}
+
+.ad {
+    flex: 1 1 100%;
+}
+
+/* FAQ mobile */
+.faqbox {
+    max-width: 90%;
+    font-size: 18px;
+}
+
+/* Footer mobile */
+footer {
+    max-width: 90%;
+    padding: 30px 0;
+}
+
+.footer {
+    grid-template-columns: 1fr;
+}
+
+
+
+/* ========================= */
+/* sm ≥ 640px */
+/* ========================= */
+@media (min-width: 640px) {
+
+    .nav-menu-item {
+        flex-direction: row;
+    }
+
+    .email-input {
+        flex-direction: row;
+    }
+
+    .email-input-btn > input {
+        width: 300px;
+    }
+
+    .email-submit {
+        width: auto;
+    }
+
+    .trending-card {
+        width: 160px;
+    }
+
+    .footer {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+
+/* ========================= */
+/* md ≥ 768px */
+/* ========================= */
+@media (min-width: 768px) {
+
+    .text-on-img {
+        width: 70%;
+    }
+
+    .trending-card {
+        width: 180px;
+    }
+
+    .ads {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .ad {
+        flex: 1 1 calc(50% - 1rem);
+    }
+
+    .faqbox {
+        max-width: 70%;
+        font-size: 22px;
+    }
+}
+
+
+
+/* ========================= */
+/* lg ≥ 1024px */
+/* ========================= */
+@media (min-width: 1024px) {
+
+    .text-on-img {
+        width: 60%;
+    }
+
+    .trending-section {
+        width: 85%;
+    }
+
+    .trending-card {
+        width: 200px;
+    }
+
+    .ad {
+        flex: 1 1 calc(25% - 1rem);
+    }
+
+    .footer {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+
+
+/* ========================= */
+/* xl ≥ 1280px */
+/* ========================= */
+@media (min-width: 1280px) {
+
+    .trending-section {
+        width: 75%;
+    }
+
+    .text-on-img h1 {
+        font-size: 3rem;
+    }
+
+    .text-on-img h3 {
+        font-size: 1.5rem;
+    }
+}
+
+/* ========================= */
+/* EMAIL INPUT SIZE FIX */
+/* ========================= */
+
+/* Default = Mobile */
+.email-input {
+    width: 85%;
+    gap: 8px;
+}
+
+.email-input-btn > input {
+    height: 38px;
+    font-size: 0.85rem;
+    padding: 6px 10px;
+}
+
+.email-submit {
+    height: 38px;
+    font-size: 0.85rem;
+    padding: 6px 12px;
+}
+
+
+/* sm ≥ 640px */
+@media (min-width: 640px) {
+    .email-input-btn > input {
+        width: 240px;
+        height: 40px;
+        font-size: 0.9rem;
+    }
+
+    .email-submit {
+        height: 40px;
+        font-size: 0.9rem;
+    }
+}
+
+
+/* md ≥ 768px */
+@media (min-width: 768px) {
+    .email-input-btn > input {
+        width: 260px;
+        height: 42px;
+        font-size: 1rem;
+    }
+
+    .email-submit {
+        height: 42px;
+        font-size: 1rem;
+    }
+}
+
+
+/* lg ≥ 1024px */
+@media (min-width: 1024px) {
+    .email-input-btn > input {
+        width: 280px;
+        height: 44px;
+    }
+
+    .email-submit {
+        height: 44px;
+    }
+}
+
+
+/* xl ≥ 1280px */
+@media (min-width: 1280px) {
+    .email-input-btn > input {
+        width: 300px;
+        height: 46px;
+    }
+
+    .email-submit {
+        height: 46px;
+    }
+}
